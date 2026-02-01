@@ -358,13 +358,13 @@ body {
 /* MAP */
 .contact-map {
   width: 50%;
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .contact-map img {
+  cursor: pointer;
   width: 90%;
   height: 450px;
   object-fit: cover;
@@ -676,3 +676,4 @@ form button {
     font-size: 18px;
   }
 }
+
