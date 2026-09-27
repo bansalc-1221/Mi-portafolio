@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +11,9 @@ body {
   color: #fff;
 }
 
+
 /* NAVBAR */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -22,14 +25,14 @@ body {
   z-index: 1000;
 }
 
-.navbar .lg{
+.navbar .lg {
   display: flex;
   justify-content: center;
   padding-left: 280px;
   max-width: 100px;
 }
 
-.navbar .logo{
+.navbar .logo {
   font-size: 30px;
 }
 
@@ -56,7 +59,6 @@ body {
   width: 100%;
 }
 
-/* NAV SEARCH */
 .nav-search {
   margin-left: auto;
   display: flex;
@@ -101,6 +103,7 @@ body {
 
 
 /* HERO */
+
 .hero {
   height: 700px;
   background: url("img50.png") center/cover no-repeat;
@@ -141,7 +144,7 @@ body {
   text-align: center;
 }
 
-.hero-text{
+.hero-text {
   margin: 0px 5%;
 }
 
@@ -152,7 +155,7 @@ body {
   text-shadow: 4px 4px 4px #000000ca;
 }
 
-.hero-text h3{
+.hero-text h3 {
   text-shadow: 4px 4px 4px #000000e0;
   font-size: 25px;
   font-weight: 800;
@@ -160,28 +163,29 @@ body {
   letter-spacing: 2px;
 }
 
-.hero-text .links{
+.hero-text .links {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 25px;
 }
 
-.links a{
+.links a {
   text-decoration: none;
 }
 
-.links i{
+.links i {
   font-size: 25px;
   color: #fff;
   text-shadow: 0 3px 3px #000000e3;
   transition: all 0.3s linear;
 }
 
-.links i:hover{
+.links i:hover {
   transform: translateY(-3px);
   text-shadow: 0 3px 3px #4e4e4ec6;
 }
+
 .hero-text button {
   margin-top: 20px;
   background: #000;
@@ -192,7 +196,9 @@ body {
   cursor: pointer;
 }
 
+
 /* ABOUT */
+
 .about {
   background: #607d8b;
   padding: 90px 60px;
@@ -211,46 +217,51 @@ body {
   margin: 30px auto;
 }
 
+
+/* SKILLS */
+
 .skills-section {
-    background: #607d8b;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 1rem;
-    gap: 2rem; 
+  background: #607d8b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+  gap: 2rem;
 }
 
 .skills-section h2 {
-    margin-top: 15px;
-    font-size: 55px;
-    font-weight: 700;
+  margin-top: 15px;
+  font-size: 55px;
+  font-weight: 700;
 }
 
 .skills-section .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .skills-section i {
-    font-size: 48px;
-    color: #fff;
-    transition: transform 0.3s ease, color 0.3s ease;
-    margin: 1rem 0; 
+  font-size: 48px;
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+  margin: 1rem 0;
 }
 
 .skills-section i:hover {
-    transform: scale(1.05);
-    color: #f2f2f2;
+  transform: scale(1.05);
+  color: #f2f2f2;
 }
 
+
 /* PROJECT */
+
 .hours {
   background: #607d8b;
   padding: 100px 60px;
-  height: 600px;
+  min-height: 600px;
 }
 
 .hours h2 {
@@ -260,12 +271,14 @@ body {
 }
 
 .project-cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 40px;
-  padding: 40px 60px;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 0;
+  align-items: stretch;
 }
 
 .project-card {
@@ -273,7 +286,7 @@ body {
   background: #ffffffac;
   border-radius: 12px;
   overflow: hidden;
-  width: 510px;
+  width: 100%;
   height: 270px;
   box-shadow: 0 5px 15px #0000002d;
   transition: transform 0.3s ease;
@@ -285,12 +298,14 @@ body {
 
 .project-img {
   width: 40%;
+  flex-shrink: 0;
 }
 
 .project-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .project-content {
@@ -335,6 +350,7 @@ body {
 
 
 /* CONTACT */
+
 .contact {
   background: #607d8b;
   padding: 70px 60px;
@@ -346,18 +362,20 @@ body {
   margin-bottom: 30px;
 }
 
-/* CONTACT LAYOUT */
+
 .contact-container {
-  display: flex;
-  height: 550px;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 30px;
+  min-height: 550px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 40px;
 }
 
-/* MAP */
+
 .contact-map {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -373,7 +391,7 @@ body {
 }
 
 .contact-form {
-  width: 50%;
+  width: 100%;
   text-align: center;
 }
 
@@ -405,11 +423,12 @@ form button {
   cursor: pointer;
 }
 
+
 .contact-social {
   display: flex;
-  justify-self: center;
-  align-self: center;
-  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .contact-social i {
@@ -425,7 +444,6 @@ form button {
 }
 
 
-/* FADE ANIMATION */
 .fade {
   opacity: 0;
   transform: translateY(40px);
@@ -437,12 +455,16 @@ form button {
   transform: translateY(0);
 }
 
-/* RESPONSIVE LAYER*/
 
-/* ---------- TABLETS & SMALL LAPTOPS ---------- */
+/* RESPONSIVE LAYER */
+
+
+/* TABLETS & SMALL LAPTOPS */
+
 @media (max-width: 1024px) {
 
   /* NAVBAR */
+
   .navbar {
     flex-wrap: wrap;
     gap: 20px;
@@ -453,7 +475,9 @@ form button {
     margin-left: auto;
   }
 
-  /* HERO — force LEFT alignment */
+
+  /* HERO */
+
   .hero,
   .hero2 {
     justify-content: flex-start !important;
@@ -461,7 +485,8 @@ form button {
     height: 600px;
   }
 
-  .hero1, .hero3 {
+  .hero1,
+  .hero3 {
     justify-content: flex-end !important;
     padding-right: 6%;
     height: 600px;
@@ -485,7 +510,9 @@ form button {
     font-size: 24px;
   }
 
+
   /* ABOUT */
+
   .about {
     padding: 80px 40px;
   }
@@ -494,10 +521,19 @@ form button {
     font-size: 26px;
   }
 
+
   /* PROJECTS */
+
   .hours {
-    height: auto;
+    min-height: auto;
     padding: 90px 40px;
+  }
+
+  .project-cards {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
   }
 
   .project-card {
@@ -505,10 +541,12 @@ form button {
     max-width: 650px;
   }
 
+
   /* CONTACT */
+
   .contact-container {
-    flex-direction: column;
-    height: auto;
+    grid-template-columns: 1fr;
+    min-height: auto;
     gap: 40px;
   }
 
@@ -520,13 +558,19 @@ form button {
   .contact-map img {
     height: 380px;
   }
+
+  .contact-social {
+    margin: 10px 0 20px;
+  }
 }
 
 
-/* ---------- MOBILE DEVICES ---------- */
+/* MOBILE DEVICES */
+
 @media (max-width: 768px) {
 
   /* NAVBAR */
+
   .navbar {
     justify-content: center;
     padding: 12px;
@@ -542,7 +586,9 @@ form button {
     margin-top: 10px;
   }
 
+
   /* HERO */
+
   .hero,
   .hero2 {
     justify-content: flex-start !important;
@@ -550,7 +596,8 @@ form button {
     height: 520px;
   }
 
-  .hero1, .hero3 {
+  .hero1,
+  .hero3 {
     justify-content: flex-end !important;
     padding-right: 5%;
     height: 520px;
@@ -578,7 +625,9 @@ form button {
     font-size: 22px;
   }
 
+
   /* ABOUT */
+
   .about {
     padding: 70px 30px;
   }
@@ -591,7 +640,9 @@ form button {
     font-size: 24px;
   }
 
+
   /* SKILLS */
+
   .skills-section h2 {
     font-size: 44px;
   }
@@ -600,13 +651,26 @@ form button {
     font-size: 42px;
   }
 
+
   /* PROJECTS */
+
+  .hours {
+    padding: 70px 20px;
+  }
+
+  .hours h2 {
+    font-size: 52px;
+  }
+
   .project-cards {
-    padding: 20px;
+    grid-template-columns: 1fr;
+    padding: 20px 0;
+    width: 100%;
   }
 
   .project-card {
     flex-direction: column;
+    width: 100%;
     height: auto;
   }
 
@@ -617,6 +681,10 @@ form button {
 
   .project-img img {
     height: 220px;
+  }
+
+  .project-content {
+    padding: 20px;
   }
 
   .project-content h3 {
@@ -632,12 +700,19 @@ form button {
     padding: 8px 50px;
   }
 
+
   /* CONTACT */
+
   .contact {
     padding: 60px 30px;
   }
 
+  .contact h2 {
+    font-size: 52px;
+  }
+
   .contact-map img {
+    width: 100%;
     height: 300px;
   }
 
@@ -652,7 +727,8 @@ form button {
 }
 
 
-/* ---------- SMALL PHONES ---------- */
+/* SMALL PHONES */
+
 @media (max-width: 480px) {
 
   .hero-text h1 {
@@ -675,5 +751,39 @@ form button {
   footer {
     font-size: 18px;
   }
-}
 
+
+  /* PROJECTS */
+
+  .project-content h3 {
+    font-size: 30px;
+  }
+
+  .project-content p {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 22px;
+    padding: 8px 35px;
+  }
+
+
+  /* CONTACT */
+
+  .contact {
+    padding: 50px 20px;
+  }
+
+  .contact-map img {
+    height: 250px;
+  }
+
+  .contact-form p {
+    font-size: 23px;
+  }
+
+  .contact-social {
+    gap: 25px;
+  }
+}
